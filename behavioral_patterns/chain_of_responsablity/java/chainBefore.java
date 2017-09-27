@@ -19,7 +19,7 @@ class Handler {
     }
 }
 
-class ChainBefore {
+public class ChainBefore {
     public static void main(String[] args) {
         Handler[] nodes = {new Handler(), new Handler(),
                 new Handler(), new Handler()};
