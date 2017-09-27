@@ -2,6 +2,7 @@
 ** The client submits each request to the "chain" abstraction and is decoupled
 ** from all subsequent processing.
 */
+import java.util.*;
 
 class Handler {
     private final static Random RANDOM = new Random();
