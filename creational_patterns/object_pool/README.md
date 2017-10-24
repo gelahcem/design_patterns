@@ -15,3 +15,14 @@ It is desirable to keep all Reusable objects that are not currently in use in th
 The Object Pool lets others "check out" objects from its pool, when those objects are no longer needed by their processes, they are returned to the pool in order to be reused.
 
 However, we don't want a process to have to wait for a particular object to be released, so the Object Pool also instantiates new objects as they are required, but must also implement a facility to clean up unused objects periodically.
+
+## Check list
+
+    Create ObjectPool class with private array of Objects inside
+    Create acquire and release methods in ObjectPool class
+    Make sure that your ObjectPool is Singleton
+
+## Rules of thumb
+
+    The Factory Method pattern can be used to encapsulate the creation logic for objects. However, it does not manage them after their creation, the object pool pattern keeps track of the objects it creates.
+    Object Pools are usually implemented as Singletons.
